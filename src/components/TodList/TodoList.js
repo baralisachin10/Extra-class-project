@@ -8,19 +8,20 @@ const TodoList = (props) => {
     const handleCheck = (event) => {
         setIsChecked(event.target.checked)
     }
+
+
     return (
         <Card className={classes.container}>
             <h1>Your Task</h1>
             <ul>
                 {props.todos.map((todo,index)=>{
-                    return <li className={classes['todo-list']} key={index}>
+                    return <li key={index} className={classes['todo-list']}>
                     <input 
                     type="checkbox" 
-                    id="completed"
                     value={isChecked}
                     onChange={handleCheck}
                     />
-                    <h3 className={`${classes['todo-text']} ${isChecked? classes.active : ''} `}>{todo.title}</h3>
+                    <h3 className={`${classes['todo-text']} ${isChecked ? classes.active : ''} `}>{todo.title}</h3>
                 </li>
                 })}
             </ul>

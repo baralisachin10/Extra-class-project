@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, {useState } from 'react'
 import Card from '../UI/Card'
 import classes from './TodoInput.module.css'
 
