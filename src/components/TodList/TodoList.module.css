@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.container h1{
+    text-align: center;
+    color: white;
+}
+
+.container ul{
+    list-style: none;
+    padding: 1rem;
+}
+
+.todo-list{
+    display: flex;
+    justify-content: start;
+    gap: 3rem;
+    align-items: center;
+    border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.todo-list input{
+    height: 1.5rem;
+    width: 1.5rem;
+    accent-color: rgb(53, 0, 53);
+}
+
+.todo-text{
+    color: white;
+    text-transform: capitalize;
+}
+
+.todo-text.active{
+    text-decoration: line-through;
+}
+

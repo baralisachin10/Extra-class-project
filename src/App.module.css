@@ -1,0 +1,15 @@
+.container{
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.heading,
+.paragraph{
+  text-align: center;
+  color: white;
+}
+
+.paragraph{
+  font-size: 1.5rem;
+}
